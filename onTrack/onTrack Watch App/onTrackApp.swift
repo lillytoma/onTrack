@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct onTrack_Watch_AppApp: App {
+struct onTrackApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
