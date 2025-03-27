@@ -1,18 +1,18 @@
 //
-//  SummaryPage.swift
+//  StartFocusTime.swift
 //  onTrack Watch App
 //
-//  Created by Lilly Toma on 3/26/25.
+//  Created by Lilly Toma on 3/27/25.
 //
 
 import SwiftUI
 
-struct SummaryPage: View {
+struct StartFocusTime: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    SummaryPage()
+    StartFocusTime()
 }
