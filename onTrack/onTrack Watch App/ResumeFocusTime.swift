@@ -9,7 +9,17 @@ import SwiftUI
 
 struct ResumeFocusTime: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack{
+                Text("Ready to Return?")
+                Spacer()
+                NavigationLink(destination: CurrIncidentHeart()) {
+                    Text("Resume")
+                        .foregroundStyle(.green)
+                }
+                Spacer()
+            }
+        }
     }
 }
 

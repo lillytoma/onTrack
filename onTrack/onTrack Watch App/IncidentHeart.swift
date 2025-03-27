@@ -2,7 +2,7 @@
 //  IncidentHeart.swift
 //  onTrack Watch App
 //
-//  Created by Lilly Toma on 3/27/25.
+//  Created by Diop on 3/27/25.
 //
 
 import SwiftUI

@@ -9,7 +9,17 @@ import SwiftUI
 
 struct StartFocusTime: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            VStack{
+                Text("Focus Time")
+                Spacer()
+                NavigationLink(destination: CurrIncidentHeart()) {
+                    Text("Start")
+                        .foregroundStyle(.green)
+                }
+                Spacer()
+            }
+        }
     }
 }
 
