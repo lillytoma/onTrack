@@ -9,6 +9,7 @@ import SwiftUI
 import WatchKit
 
 struct IncidentHeart: View {
+    
     @State private var incidentCount: Double = 5 // Use Double for Digital Crown
     @State private var elapsedTime: TimeInterval = 9002 // Example time (2:30:02)
     @FocusState private var isFocused: Bool

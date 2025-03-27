@@ -9,16 +9,16 @@ import SwiftUI
 
 struct StartFocusTime: View {
     var body: some View {
-        NavigationStack{
-            VStack{
-                Text("Focus Time")
-                Spacer()
-                NavigationLink(destination: CurrIncidentHeart()) {
-                    Text("Start")
-                        .foregroundStyle(.green)
+            NavigationStack{
+                VStack{
+                    Text("Focus Time")
+                    Spacer()
+                    NavigationLink(destination: CurrIncidentHeart()) {
+                        Text("Start")
+                            .foregroundStyle(.green)
+                    }
+                    Spacer()
                 }
-                Spacer()
-            }
         }
     }
 }
