@@ -1,0 +1,27 @@
+import SwiftUI
+
+struct StartView: View {
+    var body: some View {
+        NavigationStack {
+            VStack {
+                Spacer()
+                
+                NavigationLink(destination: ContentView(shouldStartImmediately: true)) {
+                    Text("Start")
+                        .font(.headline)
+                        .padding()
+                        .frame(width: 140)
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .clipShape(Capsule())
+                }
+                
+                Spacer()
+            }
+        }
+    }
+}
+
+#Preview {
+    StartView()
+}
