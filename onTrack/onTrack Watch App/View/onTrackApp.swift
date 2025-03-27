@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct onTrackApp: App {
+    @StateObject private var workoutManager = WorkoutManager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onAppear{
+                    workoutManager.requestAuthorization()
+                }
         }
+        .environmentObject(workoutManager)
     }
 }
