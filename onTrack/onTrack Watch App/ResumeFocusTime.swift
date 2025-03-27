@@ -15,8 +15,8 @@ struct ResumeFocusTime: View {
                 Spacer()
                 NavigationLink(destination: CurrIncidentHeart()) {
                     Text("Resume")
-                        .foregroundStyle(.green)
                 }
+                .foregroundStyle(.green)
                 Spacer()
             }
         }
