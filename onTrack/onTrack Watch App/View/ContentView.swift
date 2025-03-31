@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var workoutManager: WorkoutManager
     var body: some View {
         TabView{
             StartFocusTime()
@@ -19,4 +20,6 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(WorkoutManager())
+
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CurrIncidentHeart: View {
+    @EnvironmentObject var workoutManager: WorkoutManager
     var body: some View {
             NavigationStack{
                 Text("1:30:00") //change time to a variable that captures when the start button was tapped
