@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A622D5022D9436D00070751F /* Righteous Minds Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A622D5012D9436D00070751F /* Righteous Minds Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A622D5032D9436D00070751F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A622D4F52D9436D00070751F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A622D5002D9436D00070751F;
+			remoteInfo = "Righteous Minds Watch App";
+		};
+		A622D5142D9436D10070751F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A622D4F52D9436D00070751F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A622D5002D9436D00070751F;
+			remoteInfo = "Righteous Minds Watch App";
+		};
+		A622D51E2D9436D10070751F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A622D4F52D9436D00070751F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A622D5002D9436D00070751F;
+			remoteInfo = "Righteous Minds Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A622D52A2D9436D10070751F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A622D5022D9436D00070751F /* Righteous Minds Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A622D4FB2D9436D00070751F /* Righteous Minds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Righteous Minds.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A622D5012D9436D00070751F /* Righteous Minds Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Righteous Minds Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A622D5132D9436D10070751F /* Righteous Minds Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Righteous Minds Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A622D51D2D9436D10070751F /* Righteous Minds Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Righteous Minds Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A622D5052D9436D00070751F /* Righteous Minds Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Righteous Minds Watch App";
+			sourceTree = "<group>";
+		};
+		A622D5162D9436D10070751F /* Righteous Minds Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Righteous Minds Watch AppTests";
+			sourceTree = "<group>";
+		};
+		A622D5202D9436D10070751F /* Righteous Minds Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Righteous Minds Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A622D4FE2D9436D00070751F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A622D5102D9436D10070751F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A622D51A2D9436D10070751F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A622D4F42D9436D00070751F = {
+			isa = PBXGroup;
+			children = (
+				A622D5052D9436D00070751F /* Righteous Minds Watch App */,
+				A622D5162D9436D10070751F /* Righteous Minds Watch AppTests */,
+				A622D5202D9436D10070751F /* Righteous Minds Watch AppUITests */,
+				A622D4FC2D9436D00070751F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A622D4FC2D9436D00070751F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A622D4FB2D9436D00070751F /* Righteous Minds.app */,
+				A622D5012D9436D00070751F /* Righteous Minds Watch App.app */,
+				A622D5132D9436D10070751F /* Righteous Minds Watch AppTests.xctest */,
+				A622D51D2D9436D10070751F /* Righteous Minds Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A622D4FA2D9436D00070751F /* Righteous Minds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A622D52B2D9436D10070751F /* Build configuration list for PBXNativeTarget "Righteous Minds" */;
+			buildPhases = (
+				A622D4F92D9436D00070751F /* Resources */,
+				A622D52A2D9436D10070751F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A622D5042D9436D00070751F /* PBXTargetDependency */,
+			);
+			name = "Righteous Minds";
+			packageProductDependencies = (
+			);
+			productName = "Righteous Minds";
+			productReference = A622D4FB2D9436D00070751F /* Righteous Minds.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		A622D5002D9436D00070751F /* Righteous Minds Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A622D5272D9436D10070751F /* Build configuration list for PBXNativeTarget "Righteous Minds Watch App" */;
+			buildPhases = (
+				A622D4FD2D9436D00070751F /* Sources */,
+				A622D4FE2D9436D00070751F /* Frameworks */,
+				A622D4FF2D9436D00070751F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A622D5052D9436D00070751F /* Righteous Minds Watch App */,
+			);
+			name = "Righteous Minds Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Righteous Minds Watch App";
+			productReference = A622D5012D9436D00070751F /* Righteous Minds Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A622D5122D9436D10070751F /* Righteous Minds Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A622D52E2D9436D10070751F /* Build configuration list for PBXNativeTarget "Righteous Minds Watch AppTests" */;
+			buildPhases = (
+				A622D50F2D9436D10070751F /* Sources */,
+				A622D5102D9436D10070751F /* Frameworks */,
+				A622D5112D9436D10070751F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A622D5152D9436D10070751F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A622D5162D9436D10070751F /* Righteous Minds Watch AppTests */,
+			);
+			name = "Righteous Minds Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "Righteous Minds Watch AppTests";
+			productReference = A622D5132D9436D10070751F /* Righteous Minds Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A622D51C2D9436D10070751F /* Righteous Minds Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A622D5312D9436D10070751F /* Build configuration list for PBXNativeTarget "Righteous Minds Watch AppUITests" */;
+			buildPhases = (
+				A622D5192D9436D10070751F /* Sources */,
+				A622D51A2D9436D10070751F /* Frameworks */,
+				A622D51B2D9436D10070751F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A622D51F2D9436D10070751F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A622D5202D9436D10070751F /* Righteous Minds Watch AppUITests */,
+			);
+			name = "Righteous Minds Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "Righteous Minds Watch AppUITests";
+			productReference = A622D51D2D9436D10070751F /* Righteous Minds Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A622D4F52D9436D00070751F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					A622D4FA2D9436D00070751F = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					A622D5002D9436D00070751F = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					A622D5122D9436D10070751F = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = A622D5002D9436D00070751F;
+					};
+					A622D51C2D9436D10070751F = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = A622D5002D9436D00070751F;
+					};
+				};
+			};
+			buildConfigurationList = A622D4F82D9436D00070751F /* Build configuration list for PBXProject "Righteous Minds" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A622D4F42D9436D00070751F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A622D4FC2D9436D00070751F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A622D4FA2D9436D00070751F /* Righteous Minds */,
+				A622D5002D9436D00070751F /* Righteous Minds Watch App */,
+				A622D5122D9436D10070751F /* Righteous Minds Watch AppTests */,
+				A622D51C2D9436D10070751F /* Righteous Minds Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A622D4F92D9436D00070751F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A622D4FF2D9436D00070751F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A622D5112D9436D10070751F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A622D51B2D9436D10070751F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A622D4FD2D9436D00070751F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A622D50F2D9436D10070751F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A622D5192D9436D10070751F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A622D5042D9436D00070751F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A622D5002D9436D00070751F /* Righteous Minds Watch App */;
+			targetProxy = A622D5032D9436D00070751F /* PBXContainerItemProxy */;
+		};
+		A622D5152D9436D10070751F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A622D5002D9436D00070751F /* Righteous Minds Watch App */;
+			targetProxy = A622D5142D9436D10070751F /* PBXContainerItemProxy */;
+		};
+		A622D51F2D9436D10070751F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A622D5002D9436D00070751F /* Righteous Minds Watch App */;
+			targetProxy = A622D51E2D9436D10070751F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A622D5252D9436D10070751F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A622D5262D9436D10070751F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A622D5282D9436D10070751F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Righteous Minds Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 88YLQH34W2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Righteous Minds";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diop-Shumake---88YLQH34W2.Righteous-Minds.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		A622D5292D9436D10070751F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Righteous Minds Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 88YLQH34W2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Righteous Minds";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diop-Shumake---88YLQH34W2.Righteous-Minds.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		A622D52C2D9436D10070751F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88YLQH34W2;
+				INFOPLIST_KEY_CFBundleDisplayName = "Righteous Minds";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diop-Shumake---88YLQH34W2.Righteous-Minds";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A622D52D2D9436D10070751F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88YLQH34W2;
+				INFOPLIST_KEY_CFBundleDisplayName = "Righteous Minds";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diop-Shumake---88YLQH34W2.Righteous-Minds";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A622D52F2D9436D10070751F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88YLQH34W2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diop-Shumake---88YLQH34W2.Righteous-Minds-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Righteous Minds Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Righteous Minds Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		A622D5302D9436D10070751F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88YLQH34W2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diop-Shumake---88YLQH34W2.Righteous-Minds-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Righteous Minds Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Righteous Minds Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+		A622D5322D9436D10070751F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88YLQH34W2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diop-Shumake---88YLQH34W2.Righteous-Minds-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Righteous Minds Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Debug;
+		};
+		A622D5332D9436D10070751F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 88YLQH34W2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Diop-Shumake---88YLQH34W2.Righteous-Minds-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Righteous Minds Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A622D4F82D9436D00070751F /* Build configuration list for PBXProject "Righteous Minds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A622D5252D9436D10070751F /* Debug */,
+				A622D5262D9436D10070751F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A622D5272D9436D10070751F /* Build configuration list for PBXNativeTarget "Righteous Minds Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A622D5282D9436D10070751F /* Debug */,
+				A622D5292D9436D10070751F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A622D52B2D9436D10070751F /* Build configuration list for PBXNativeTarget "Righteous Minds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A622D52C2D9436D10070751F /* Debug */,
+				A622D52D2D9436D10070751F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A622D52E2D9436D10070751F /* Build configuration list for PBXNativeTarget "Righteous Minds Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A622D52F2D9436D10070751F /* Debug */,
+				A622D5302D9436D10070751F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A622D5312D9436D10070751F /* Build configuration list for PBXNativeTarget "Righteous Minds Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A622D5322D9436D10070751F /* Debug */,
+				A622D5332D9436D10070751F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A622D4F52D9436D00070751F /* Project object */;
+}
