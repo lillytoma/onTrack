@@ -7,53 +7,69 @@
 
 import SwiftUI
 import HealthKit
-import ClockKit
 
 struct StartFocusTime: View {
     @State private var startTime: Date?
     @State private var elapsedTime: Double = 0
     @State private var timer: Timer?
-    @State private var isRunning = true
+    @State private var isRunning = false
     @EnvironmentObject var workoutManager: WorkoutManager
     
-    
     var body: some View {
-            NavigationStack{
-                if isRunning == false{
-                    VStack{
-                        Text("Focus Time")
-                        Spacer()
-                        Button(action: start){
-                            Text("Start")
-                        }
-                        
-                        .foregroundStyle(.green)
-                        Spacer()
+        NavigationStack {
+            VStack {
+                Text("Focus Time")
+                    .font(.title2)
+                    .bold()
+                
+                Spacer()
+                
+                Text(formatTime(elapsedTime))
+                    .font(.system(size: 30, weight: .bold, design: .monospaced))
+                    .padding()
+                
+                Text("\(workoutManager.heartRate.formatted(.number.precision(.fractionLength(0)))) bpm")
+                    .font(.headline)
+                    .foregroundStyle(.red)
+                
+                Spacer()
+                
+                HStack {
+                    Button(action: start) {
+                        Text("Start")
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.green)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
                     }
-                }
-                else{
-                    Text("Timer Screen")
-                    Text(
-                       // workoutManager.heartRate
-                        30.0 //swap this
-                            .formatted(
-                                .number
-                                    .precision(
-                                        .fractionLength(0)
-                                    )
-                            ) + " bpm"
-                    )
+                    .disabled(isRunning)
                     
-                    
+                    Button(action: stop) {
+                        Text("Stop")
+                            .padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.red)
+                            .foregroundColor(.white)
+                            .cornerRadius(10)
+                    }
+                    .disabled(!isRunning)
                 }
+                .padding()
+            }
+            .padding()
         }
     }
+    
     func start() {
         startTime = Date()
         isRunning = true
         workoutManager.startWorkout(workoutType: HKWorkoutActivityType.other)
+        
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
-            elapsedTime = Date().timeIntervalSince(startTime!)
+            if let start = startTime {
+                elapsedTime = Date().timeIntervalSince(start)
+            }
         }
     }
     
@@ -62,13 +78,15 @@ struct StartFocusTime: View {
         timer?.invalidate()
         timer = nil
     }
+    
     func formatTime(_ time: Double) -> String {
         let minutes = Int(time) / 60
         let seconds = Int(time) % 60
-        return String(format: "%02i:%02i:%03i", minutes, seconds)
+        return String(format: "%02i:%02i", minutes, seconds)
     }
 }
 
 #Preview {
     StartFocusTime()
+        .environmentObject(WorkoutManager())
 }
