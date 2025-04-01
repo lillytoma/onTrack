@@ -9,11 +9,14 @@ import SwiftUI
 import HealthKit
 
 struct StartFocusTime: View {
-    @State private var startTime: Date?
-    @State private var elapsedTime: Double = 0
-    @State private var timer: Timer?
-    @State private var isRunning = false
-    @EnvironmentObject var workoutManager: WorkoutManager
+//    @State private var startTime: Date?
+//    @State private var elapsedTime: Double = 0
+//    @State private var timer: Timer?
+//    @State private var isRunning = false
+//    @State var elapsedTime: Double = 0
+    
+
+    @Environment(WorkoutManager.self) var workoutManager: WorkoutManager
     
     var body: some View {
         NavigationStack {
@@ -24,7 +27,7 @@ struct StartFocusTime: View {
                 
                 Spacer()
                 
-                Text(formatTime(elapsedTime))
+                Text(workoutManager.formatTime(workoutManager.elapsedTime))
                     .font(.system(size: 30, weight: .bold, design: .monospaced))
                     .padding()
                 
@@ -35,25 +38,26 @@ struct StartFocusTime: View {
                 Spacer()
                 
                 HStack {
-                    Button(action: start) {
+                    Button(action: startUpdate) {
                         Text("Start")
                             .padding()
-                            .frame(maxWidth: .infinity)
+                            .foregroundStyle(.black)
+                            .frame(width: 85, height: 50)
                             .background(Color.green)
-                            .foregroundColor(.white)
                             .cornerRadius(10)
                     }
-                    .disabled(isRunning)
+                    .disabled(workoutManager.isRunning)
                     
-                    Button(action: stop) {
+                    Button(action: stopUpdate) {
                         Text("Stop")
                             .padding()
-                            .frame(maxWidth: .infinity)
+                            .foregroundStyle(.black)
+                            .frame(width: 85, height: 50)
                             .background(Color.red)
                             .foregroundColor(.white)
                             .cornerRadius(10)
                     }
-                    .disabled(!isRunning)
+                    .disabled(!workoutManager.isRunning)
                 }
                 .padding()
             }
@@ -61,32 +65,39 @@ struct StartFocusTime: View {
         }
     }
     
-    func start() {
-        startTime = Date()
-        isRunning = true
-        workoutManager.startWorkout(workoutType: HKWorkoutActivityType.other)
-        
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
-            if let start = startTime {
-                elapsedTime = Date().timeIntervalSince(start)
-            }
-        }
+    func startUpdate(){
+        workoutManager.start()
+    }
+    func stopUpdate(){
+        workoutManager.stop()
     }
     
-    func stop() {
-        isRunning = false
-        timer?.invalidate()
-        timer = nil
-    }
-    
-    func formatTime(_ time: Double) -> String {
-        let minutes = Int(time) / 60
-        let seconds = Int(time) % 60
-        return String(format: "%02i:%02i", minutes, seconds)
-    }
+//    func start() {
+//        startTime = Date()
+//        isRunning = true
+//        workoutManager.startWorkout(workoutType: HKWorkoutActivityType.other)
+//        
+//        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+//            if let start = startTime {
+//                elapsedTime = Date().timeIntervalSince(start)
+//            }
+//        }
+//    }
+//    
+//    func stop() {
+//        isRunning = false
+//        timer?.invalidate()
+//        timer = nil
+//    }
+//    
+//    func formatTime(_ time: Double) -> String {
+//        let minutes = Int(time) / 60
+//        let seconds = Int(time) % 60
+//        return String(format: "%02i:%02i", minutes, seconds)
+//    }
 }
 
 #Preview {
     StartFocusTime()
-        .environmentObject(WorkoutManager())
+        .environment(WorkoutManager())
 }

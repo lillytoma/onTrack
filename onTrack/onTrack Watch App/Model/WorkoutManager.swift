@@ -7,6 +7,8 @@
 
 import Foundation
 import HealthKit
+import CoreLocation
+import SwiftUICore
 
 // MARK: WORKOUT MANAGER
 /*
@@ -27,7 +29,8 @@ import HealthKit
  .navigationBarTitle("Workouts")
  
  */
-class WorkoutManager: NSObject, ObservableObject {
+@Observable
+class WorkoutManager: NSObject {
     
     var selectedWorkout: HKWorkoutActivityType? {
         didSet {
@@ -36,7 +39,7 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
-    @Published var showingSummaryView: Bool = false {
+     var showingSummaryView: Bool = false {
         didSet {
             // Sheet dismissed
             if showingSummaryView == false {
@@ -104,7 +107,8 @@ class WorkoutManager: NSObject, ObservableObject {
     // MARK: - State Control
     
     // The workout session state
-    @Published var running = false
+    
+var running = false
     
     func pause() {
         session?.pause()
@@ -128,11 +132,59 @@ class WorkoutManager: NSObject, ObservableObject {
     }
     
     // MARK: - Workout Metrics
-    @Published var averageHeartRate: Double = 0
-    @Published var heartRate: Double = 0
+     var averageHeartRate: Double = 0
+     var heartRate: Double = 0
    // @Published var activeEnergy: Double = 0
     //@Published var distance: Double = 0
    // @Published var workout: HKWorkout?
+
+    //MY CODE STARTS
+    
+     var startTime: Date?
+     var elapsedTime: Double = 0
+     var timer: Timer?
+     var isRunning = false
+     var count = 0
+
+    //MYCODE
+    
+    func start(){
+        startTime = Date()
+        isRunning = true
+        startWorkout(workoutType: HKWorkoutActivityType.other)
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+            if let start = self.startTime {
+                self.elapsedTime = Date().timeIntervalSince(start)
+            }
+        }
+    }
+    
+    func stop() {
+        isRunning = false
+        timer?.invalidate()
+        timer = nil
+    }
+    
+    func formatTime(_ time: Double) -> String {
+        let minutes = Int(time) / 60
+        let seconds = Int(time) % 60
+        return String(format: "%02i:%02i", minutes, seconds)
+    }
+    
+    func incidentCounter() -> Int{
+        if(heartRate > 70){
+            count = count + 1
+        }
+        return count
+    }
+    
+    
+    
+    
+    ///MY CODE ENDS
+    
+    
     
 }
 
@@ -219,4 +271,5 @@ extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
      //   distance = 0
     }
     
+
 }

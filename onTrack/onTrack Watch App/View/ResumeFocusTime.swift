@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ResumeFocusTime: View {
-    @EnvironmentObject var workoutManager: WorkoutManager
+    @Environment(WorkoutManager.self) var workoutManager: WorkoutManager
     var body: some View {
         NavigationStack{
             VStack{

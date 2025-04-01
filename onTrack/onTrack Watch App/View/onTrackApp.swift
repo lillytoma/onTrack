@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct onTrackApp: App {
-    @StateObject private var workoutManager = WorkoutManager()
+    @State private var workoutManager = WorkoutManager()
 
     var body: some Scene {
         WindowGroup {
@@ -18,6 +18,6 @@ struct onTrackApp: App {
                     workoutManager.requestAuthorization()
                 }
         }
-        .environmentObject(workoutManager)
+        .environment(workoutManager)
     }
 }
