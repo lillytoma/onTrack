@@ -22,7 +22,7 @@ struct CurrIncidentHeart: View {
                 
                 ZStack{
                     Image("heart")
-                    Text("Incidents\n         \(workoutManager.incidentCounter())") //change the number 5 to a variable
+                    Text("Incidents\n         \(workoutManager.count)") //change the number 5 to a variable
                 }
 //                HStack{ decided to remove this and have the start and stop on a different page
 //                    NavigationLink(destination: ResumeFocusTime()) {
@@ -39,10 +39,11 @@ struct CurrIncidentHeart: View {
 //                }
 //                .padding()
             }
-        } 
+        }
+    
 }
 
 #Preview {
-    CurrIncidentHeart()
+    CurrIncidentHeart( )
         .environment(WorkoutManager())
 }

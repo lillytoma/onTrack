@@ -145,6 +145,7 @@ var running = false
      var timer: Timer?
      var isRunning = false
      var count = 0
+     var incidentTimer: Timer?
 
     //MYCODE
     
@@ -152,7 +153,7 @@ var running = false
         startTime = Date()
         isRunning = true
         startWorkout(workoutType: HKWorkoutActivityType.other)
-        
+        incidentCounter()
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
             if let start = self.startTime {
                 self.elapsedTime = Date().timeIntervalSince(start)
@@ -171,12 +172,42 @@ var running = false
         let seconds = Int(time) % 60
         return String(format: "%02i:%02i", minutes, seconds)
     }
+//    func incidentCounter(){
+//        print("incident called")
+//        incidentTimer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true){_ in
+//            
+//            if(self.heartRate > 70){
+//                self.count = self.count + 1
+//                print("incident updated in view")
+//            }
+//        }
+//
+//    }
+//
     
-    func incidentCounter() -> Int{
-        if(heartRate > 70){
-            count = count + 1
+    var firstCount = 0
+    var secondCount = 0
+    var isFirstIncident = true
+    
+
+    
+    func incidentCounter(){
+    
+        incidentTimer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true){_ in
+            self.firstCount = Int(self.heartRate)
+            if(self.isFirstIncident == true){
+                if(self.firstCount > 80){
+                    self.count = self.count + 1
+                    self.secondCount = self.firstCount
+                    self.isFirstIncident = false
+                }
+            }
+            if(self.firstCount < 80 && self.secondCount >= 80){
+                self.secondCount = self.firstCount
+                self.count = self.count + 1
+            }
         }
-        return count
+
     }
     
     
